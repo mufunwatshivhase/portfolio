@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0 ;
@@ -551,4 +552,559 @@ display: flex;
         background-image: url(images/back.png);
         background-size: cover;
         background-position: center;
+=======
+*{
+    margin: 0;
+    padding: 0 ;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    color: aliceblue;
+    background: #F0F4F8;
+}
+/*-----------------------------------home--------------------------------*/
+#header{
+width: 100%;
+height: 100vh;
+background-image: url(images/back.png);
+background-size: cover;
+background-position: center;
+
+
+}
+.container{
+    padding: 10px 0%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(143, 142, 142, 0.2);
+}
+.logo {
+    width:80px;
+    margin-left: 3%;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    background-color: #F0F4F8;
+    padding: 8px 8px;
+     border-radius: 6px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 10px;
+
+}
+nav ul li a:hover{
+    background: rgba(143, 142, 142, 0.2);
+    border-radius: px;
+    padding: 10px 10px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.headerText{
+    margin-top: 16%;
+    font-size: 30px;
+    color: #000;
+    margin-left: 50px;
+}
+.headerText h1{
+    color:#080808;
+    
+}
+.headerText h2 span{
+
+    color:#070707;
+    background: rgba(143, 142, 142, 0.2);
+    font-size: 150%;
+    border-radius: 10px;
+}
+.headerText p{
+    font-size: 18px;
+    color: black;
+    margin-top: 30px;
+}
+nav ul .fa-regular{
+    display: none;
+}
+nav i.fa-solid.fa-bars{
+    display: none;
+
+}
+#datetime{
+    color: #000;
+    font-size: 20px;
+    margin-top: -300px;
+    text-align: left;
+    padding-left: 3%;
+    padding-top: 15%;
+}
+.cert{
+    margin-top: 15%;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.cert img{
+    background-color: white;
+    border-radius: 20%;
+}
+.cert img:hover{
+    background: rgba(143, 142, 142, 0.2);
+    border-radius: 20%;
+    padding: 15px 15px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/*---------------------------------------------About Me---------------------*/
+
+#section{
+    width: 100%;
+    min-height: 90vh;
+}
+.containerrr{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 100px;
+
+}
+.content-section{
+    float: left;
+    width: 55%;
+
+}
+.image-section{
+    float: right;
+    width: 40%;
+}
+.image-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    box-shadow: 0px 15px 30px rgba(10, 10, 10, 0.2);
+    
+}
+.content-section .title{
+   
+    font-size: 28px;
+    color: rgb(10, 10, 10);
+    
+}
+.content-section .title h1{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    color: #919090;  
+
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: rgb(15, 15, 15);
+    font-size: 24px;
+}
+.content-section .content p{
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgb(15, 15, 15);
+}
+.content-section .content .button{
+    margin-top: 50px;
+}
+.content-section .content .button a{
+    background-color: #333;
+    color: aliceblue;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+.content-section .content .button a:hover{
+    background-color: rgba(143, 142, 142, 0.2);
+    color: rgb(0, 0, 0);
+
+}
+.content-section .social{
+    margin-top: 80px;
+
+}
+.content-section .social i{
+    color:#fafafa;
+    font-size: 30px;
+    padding: 20px;
+    background: #2b2929;
+    min-width: 50px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.content-section .social i:hover{
+    color:#fafafa;
+background-color: rgba(143, 142, 142, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+.footerRow {
+    text-align: center;
+    padding: 2px;
+    background-color: rgba(56, 55, 55, 0.9);
+    color: rgb(248, 246, 246);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*---------------------------About Me 2------------------------*/
+
+#E-E{
+ width: 100%;
+ position: relative;
+ text-align: center;
+
+}
+
+#E-E h1{
+
+
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 2;
+        margin-bottom: 60px;
+        color: #a0a0a0;
+    
+}
+
+.tab-link{
+    margin-right: 100px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 6px;
+}
+.tab-link.active-link {
+    border-bottom: 3px solid #0d62ff;
+    padding-bottom: 0px;
+    font-weight: 100;
+        }
+tab-link::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #0d62ff;
+    position:  absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    color: #0d62ff;
+}
+.tab-link.active-link::after{
+    width: 50%;
+}
+.tab-content li .role,
+        .tab-content li .date {
+          margin-top: 10px !important;
+        }
+.tab-content{
+    color: #050505;
+    text-align: center;
+    padding: 12px 0 24px;
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
+}
+
+.tab-content ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0 18px;
+    max-width: 760px;
+}
+.education-table {
+    margin: 12px auto;
+    display: block;
+    max-width: 900px;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+.tab-content li {
+    margin-bottom: 28px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+.tab-content li img {
+    flex-shrink: 0;
+    order: -1;
+    align-self: flex-start;
+    margin-top: -30px !important;
+}
+.tab-content h2 {
+    margin: 0 0 6px 0;
+}
+.tab-content p{
+    margin-top: -30px;
+}
+/*--------------------------My projects--------------*/
+#wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  margin: 40px auto;
+  padding: 20px;
+}
+      #wrapper h2{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 2;
+        margin-bottom: 60px;
+        color: #a0a0a0;
+    
+      }
+      #wrapper i {
+        top: 55%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        background: #0c0c0c;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+      }
+      #wrapper i:active{
+        transform: translateY(-60%) scale(0.85);
+      }
+      #wrapper i:first-child{
+        left: -40px;
+      }
+      #wrapper i:last-child{
+        right: -40px;
+      }
+      
+      #wrapper .carousel{
+         display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        border-radius: 8px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      }
+      .carousel::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel.no-transition {
+        scroll-behavior: auto;
+      }
+      .carousel.dragging {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+      }
+      .carousel.dragging .card {
+        cursor: grab;
+        user-select: none;
+      }
+      .carousel :where(.card, .img) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .carousel .card {
+        scroll-snap-align: start;
+        height: 370px;
+        list-style: none;
+        background: #181818;
+        cursor: pointer;
+        padding-top: 20%;
+        flex-direction: column;
+        border-radius: 8px;
+      }
+      .carousel .card .img {
+       /* background: #8B53FF; */
+        height: 120px;
+        width: 120px;
+       /* border-radius: 50%;*/
+      }
+      .card .img img {
+        width: 120px;
+        height: 120px;
+        /*border-radius: 50%;*/
+        object-fit: cover;
+        border: 4px solid #fff;
+      }
+      .carousel .card h2 {
+        font-weight: 500;
+        font-size: 1.56rem;
+        margin: 30px 0 5px;
+      }
+
+      
+
+/*---------------------------contact--------------------------*/
+
+#contact{
+    margin-top: -150px;
+    position: relative;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    
+}
+#contact .content {
+    max-width: 800px;
+    text-align: center;
+    
+}
+#contact .content h2 {
+    font-size: 3em;
+    margin: 25px;
+    font-weight: 500;
+    color:  #a0a0a0;
+    
+}
+#contact .content p {
+
+    font-weight: 300;
+    color: rgb(15, 15, 15);
+    margin-top: 30px;
+}
+.containerr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.containerr .contactInfo {
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+}
+.containerr .contactInfo .box {
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.containerr .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #2b2929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+.containerr .contactInfo .box .text {
+    display:flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    color: rgb(17, 17, 17);
+    font-weight: 300;
+}
+.containerr .contactInfo .box .text h3 {
+    font-weight: 500;
+    color:black;
+}
+.contactForm{
+ width: 40%;
+ padding: 40px;
+ background: rgba(207, 207, 207, 0.9);
+ border-radius: 5px;
+}
+.contactForm h2 {
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input , .contactForm .inputBox
+ textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #ffffff;
+    font: size 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #333;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.contactForm.inputBox input :hover{
+    background: rgba(143, 142, 142, 0.2);
+    border-radius: px;
+    padding: 10px 10px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    #header{
+
+        background-image: url(images/back.png);
+        background-size: cover;
+        background-position: center;
+>>>>>>> e8cc303 (mufunwa)
     } 
