@@ -11,7 +11,7 @@
   <link rel="stylesheet" media="only screen and (max-width: 600px)" href="34.css">
   <script src="56.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 </head>
 <body>
       <!------------------home--------------------------->
@@ -34,15 +34,13 @@
                 <h2>Hi ,I'm <span>Mufunwa Tshivhase</span> </h2>
                 <p>A tech enthusiast and computing honours student passionate about cloud technologies, digital branding, and <br>ing real-world problems through smart design and strategy.</p>
             </div>
-            <div class="cert">
+                  </div>
+          <div class="cert">
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/5B6FA8E7A73A285E?sharingId=6186806EAC14155C">  <img src="images/az-204.png" class="logo"></a>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/FFB1F0BB223DD003?sharingId=6186806EAC14155C"> <img src="images/az-900.png" class="logo"></a>
               <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/759F03C356872826?sharingId=6186806EAC14155C"> <img src="images/pl-900.png" class="logo"></a>
             </div>
-            <div id="datetime" aria-live="polite"></div>
-            
-
-        </div>
+        <div id="datetime" aria-live="polite"></div>
     </div>
 
      <!------------------About Me--------------------------->
@@ -69,14 +67,15 @@ In addition to technical skills, I excel in supplier engagement and documentatio
                     <a href="MUFUNWA-TSHIVHASE.pdf">Download CV</a>
 
                      </div>
-                </div>
-                <div class="social">
+                                     <div class="social">
                     <a href="https://www.facebook.com/mufunwa.tshivhase.5"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://x.com/Mufunwa_23"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mufunwa-tshivhase-97060a1b5"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/mufunwa-tshivhase-97060a1b5"><i class="fa-brands fa-linkedin"></i></a>
 
                 </div>
+                </div>
+
             </div>
             <div class="image-section">
                 <img src="images\GreyCodeImg.jpg">
@@ -85,14 +84,17 @@ In addition to technical skills, I excel in supplier engagement and documentatio
     </div>
     <!-----------------About Us 2------------------------------->
   <div id="E-E">
-    <h1 class="tab-link active-link" onclick="opentab('education')">Education</h1>
-    <h1 class="tab-link" onclick="opentab('experience')">Experience</h1>
-  </div>
+    <div class="tab-links">
+      <h1 class="tab-link active-link" onclick="opentab('education')">Education</h1>
+      <h1 class="tab-link" onclick="opentab('experience')">Experience</h1>
+    </div>
+
+  <!-- Education tab -->
   <div class="tab-content active-tab" id="education">
     <table class="education-table">
       <thead>
         <tr>
-          <th>""</th>
+          <th></th>
           <th>Institution</th>
           <th>Qualification</th>
           <th>Completed</th>
@@ -100,21 +102,21 @@ In addition to technical skills, I excel in supplier engagement and documentatio
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="educationBod">
           <td><img src="images/unisa.png" alt="UNISA Logo" style="max-width: 100px;"></td>
           <td><h3>University of South Africa</h3></td>
           <td>Bachelor of Science Honours in Computing (98908)</td>
           <td>2026</td>
           <td>Gauteng, South Africa</td>
         </tr>
-        <tr>
+        <tr class="educationBod">
           <td><img src="images/univen.png" alt="UNIVEN Logo" style="max-width: 100px;"></td>
           <td><h3>University of Venda</h3></td>
           <td>Bachelor of Sciences in Computer Science (BSCCSI)</td>
           <td>2019</td>
           <td>Limpopo, South Africa</td>
         </tr>
-        <tr>
+        <tr class="educationBod">
           <td><img src="images/dzata.png" alt="DZATA Logo" style="max-width: 100px;"></td>
           <td><h3>Dzata Secondary School</h3></td>
           <td>National Senior Certificate (Grade 12)</td>
@@ -124,80 +126,102 @@ In addition to technical skills, I excel in supplier engagement and documentatio
       </tbody>
     </table>
   </div>
+
+  <!-- Experience tab -->
   <div class="tab-content" id="experience">
-    <ul>
-      <li><h2>Greycode PTYLTD</h2>
+  <ul>
+    <li>
+      <h2>Greycode PTYLTD</h2>
       <p class="role">Software Developer & Skills Development Assistant</p>
       <p class="date">July 2024 – June 2025</p>
-      
       <img src="images/greycode.png" alt="Greycode Logo" style="max-width: 120px; margin-top: 8px;">
-      </li>
-      <p><strong>Responsibilities:</strong></p>
       <ul>
-        <li>Responsible for identifying competencies, designing and implementing training programs, selecting suitable candidates, facilitating, monitoring progress, providing evaluations, and measuring program effectiveness. <br> As a software developer, I designed, coded, tested, debugged, and deployed applications, resolved problems, maintained them, collaborated with colleagues, provided guidance, and supported beginners in electronics and programming(C++).</li>
+        <li>Identified competencies, designed and implemented training programs.</li>
+        <li>Facilitated sessions, monitored progress, and supported beginners in electronics and programming (C++).</li>
       </ul>
+    </li>
 
-      <li><h2>BritelinkMCT</h2>
+    <li>
+      <h2>BritelinkMCT</h2>
       <p class="role">Fiber Technician Assistant</p>
       <p class="date">Jan 2023 – June 2024</p>
-    
       <img src="images/britelink.png" alt="BritelinkMCT Logo" style="max-width: 120px; margin-top: 8px;">
-      </li>
-        <p><strong>Responsibilities:</strong></p>
       <ul>
-        <li>A Fiber Optic Technician Assistant assists fiber optic technicians in installing cables, testing connections, splicing and terminating cables, and documenting installation and repair activities, ensuring proper installation and maintenance of fiber optic networks for smooth communication systems.</li>
+        <li>Assisted fiber optic technicians in installing cables and testing connections.</li>
+        <li>Spliced and terminated cables, documented installation and repair activities.</li>
       </ul>
+    </li>
 
-      <li><h2>Imali Wealth Group</h2>
+    <li>
+      <h2>Imali Wealth Group</h2>
       <p class="role">Web Developer Intern</p>
       <p class="date">June 2022 – Dec 2022</p>
-      
       <img src="images/imali.png" alt="Imali Wealth Group Logo" style="max-width: 120px; margin-top: 8px;">
-      </li>
-      <p><strong>Responsibilities:</strong></p>
       <ul>
-        <li>I was a web developer, responsible for writing, debugging, testing, designing, maintaining, and researching web technologies, including HTML, CSS, JavaScript, and Python, and ensuring web applications function correctly across different devices.</li>
+        <li>Developed responsive web applications using HTML, CSS, JavaScript, and Python.</li>
+        <li>Ensured cross-device compatibility and optimized performance.</li>
       </ul>
-    </ul>
-  </div>
+    </li>
+  </ul>
+</div>
+
     <!-----------------my projects----------------------------->
 
     <div id="wrapper">
-        <h2>My Project</h2>
-      <i id="left" class="fa-solid fa-angle-left" style="left: -40px;"></i>
-      <ul class="carousel">
-        <li class="card">
-          <div class="img"><img src="images\farsd1.png" alt="img" draggable="false"></div>
-          <h2>Coming Soon</h2>
-          <span>project</span>
-        </li>
-        <li class="card">
-          <div class="img"><img src="images\farsd2.png" alt="img" draggable="false"></div>
-          <h2>Coming Soon</h2>
-          <p> project.</p>
-        </li>
-        <li class="card">
-          <div class="img"><img src="images\farsd3.png" alt="img" draggable="false"></div>
-          <h2>Coming Soon</h2>
-          <p>project</p>
-        </li>
-        <li class="card">
-          <div class="img"><img src="images\farsd4.png" alt="img" draggable="false"></div>
-          <h2>Coming Soone</h2>
-          <p>project</p>
-        </li>
-        <li class="card">
-          <div class="img"><img src="images\farsd5.png" alt="img" draggable="false"></div>
-          <h2>Coming Soon</h2>
-          <p>project</p>
-        </li>
-        <li class="card">
-          <div class="img"><img src="images\farsd6.png" alt="img" draggable="false"></div>
-          <h2>Coming Soon</h2>
-          <p>project</p>
-        </li>
-      </ul>
-      <i id="right" class="fa-solid fa-angle-right"></i>
+  <h1 class="carousel-heading">My Projects</h1>
+    <div class="SlideContainer">
+        <div class="card-wrapper">
+            <ul class="card-list">
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src = "images/basic.webp" alt="Card Image" class="card-image">
+                        <p class="badge">Basic Programs</p>
+                        <h2 class="card-title">collection of different basic programs</h2>
+                        <button  class=" card-button material-symbols-rounded">arrow_forward</button>
+                        
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src = "images/e-co.avif" alt="Card Image" class="card-image">
+                        <p class="badge">E-Commerce</p>
+                        <h2 class="card-title">collection of different e-commerce solutions</h2>
+                        <button  class=" card-button material-symbols-rounded">arrow_forward</button>
+                        
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src = "images/basic.webp" alt="Card Image" class="card-image">
+                        <p class="badge">Comming Soon</p>
+                        <h2 class="card-title">collection of different basic programs</h2>
+                        <button  class=" card-button material-symbols-rounded">arrow_forward</button>
+                        
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src = "images/basic.webp" alt="Card Image" class="card-image">
+                        <p class="badge">Comming Soon</p>
+                        <h2 class="card-title">collection of different basic programs</h2>
+                        <button  class=" card-button material-symbols-rounded">arrow_forward</button>
+                        
+                    </a>
+                </li>
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src = "images/basic.webp" alt="Card Image" class="card-image">
+                        <p class="badge">Comming Soon</p>
+                        <h2 class="card-title">collection of different basic programs</h2>
+                        <button  class=" card-button material-symbols-rounded">arrow_forward</button>
+                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="slide-btn prev">◀</button>
+        <button class="slide-btn next">▶</button>
+    </div>
     </div>
      <!-----------------Contact----------------------------->
     <div id="contact">
@@ -258,48 +282,5 @@ In addition to technical skills, I excel in supplier engagement and documentatio
 
     </div>
 
-    
 </body>
-<script>
-    <!---------------first education and experience-->
-    var tablink = document.getElementsByClassName("tab-link");
-    var tabcontent = document.getElementsByClassName("tab-content");
-
-    function opentab(tabname){
-        for(var i = 0; i < tablink.length; i++){
-            tablink[i].classList.remove("active-link");
-        }
-        for(var i = 0; i < tabcontent.length; i++){
-            tabcontent[i].classList.remove("active-tab");
-        }
-        document.getElementById(tabname).classList.add("active-tab");
-        event.currentTarget.classList.add("active-link");
-    }
-
-
-  
-
-
-
-    var sidemeu =document.getElementById("sidemenu");
-    function openmenu(){
-        sidemeu.style.right="0";
-    }
-        function closemenu(){
-            sidemeu.style.right="-165px";
-
-    }
-    // Date/time updater
-    function updateDateTime(){
-      var el = document.getElementById('datetime');
-      if(!el) return;
-      var now = new Date();
-      var options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-      var dateStr = now.toLocaleDateString(undefined, options);
-      var timeStr = now.toLocaleTimeString();
-      el.textContent = dateStr + ' · ' + timeStr;
-    }
-    setInterval(updateDateTime, 1000);
-    updateDateTime();
-</script>
 </html>
