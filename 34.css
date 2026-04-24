@@ -10,6 +10,18 @@ body{
     color: aliceblue;
     background: #F0F4F8;
 }
+
+/*for anomation*/
+.hidden {
+  opacity: 0;
+  transform: translateY(90px);
+  transition: all 2s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY( 0);
+}
 /*-----------------------------------home--------------------------------*/
 #header{
 width: 100%;
@@ -266,6 +278,7 @@ nav i.fa-solid.fa-bars{
   justify-content: center; 
   gap: 40px; 
   margin-top: 20px;
+  cursor: pointer;
 
 }
 
