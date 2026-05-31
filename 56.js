@@ -20,7 +20,7 @@ const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
 
 let currentIndex = 0;
-const cardWidth = 420; // 400px card + 20px gap
+const cardWidth = 420; 
 const visibleCards = 3;
 
 nextBtn.addEventListener('click', () => {
