@@ -293,7 +293,6 @@ nav i.fa-solid.fa-bars{
   box-shadow: 0 0 12px rgba(0,132,255,0.6);
 }
 
-
 .tab-links h1 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -327,8 +326,10 @@ nav i.fa-solid.fa-bars{
     margin: 3rem;
     
 }
+th {
 
-
+    color: white
+}
 .education-table {
     margin: 15px auto;
     display: block;
