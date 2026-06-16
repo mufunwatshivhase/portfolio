@@ -51,7 +51,7 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.remove('show');
     }
   });
-}, { threshold: 0.1 }); // triggers when 10% is visible
+}, { threshold: 0.1 }); 
 
 hiddenElements.forEach((el) => observer.observe(el));
 
