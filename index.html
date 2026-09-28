@@ -2,14 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="34.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <title>MufunwaTshivhase</title>
-    <link rel="stylesheet" media="only screen and (max-width: 600px)" href="34.css">
-    <script src="56.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        try {
+            if (localStorage.getItem('portfolio-theme') === 'dark') {
+                document.documentElement.dataset.theme = 'dark';
+            }
+        } catch {}
+    </script>
+    <link rel="stylesheet" href="34.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio of Mufunwa Tshivhase, a computing graduate focused on software development and cloud technology.">
+    <title>Mufunwa Tshivhase | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,7 +32,7 @@
     <div id="header">
         <div class="container">
             <nav class="hidden">
-                <img src="images/logoimg.png" class="logo" alt="Company logo">
+                <a href="#header" aria-label="Mufunwa Tshivhase home"><img src="images/logoimg.png" class="logo" alt=""></a>
 
 
                 <ul id="sidemenu">
@@ -32,34 +41,41 @@
                     <li><a href="#wrapper">My Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
 
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    <li class="menu-close-item">
+                        <button class="menu-close" type="button" onclick="closemenu()" aria-label="Close navigation">
+                            <i class="fa-regular fa-circle-xmark" aria-hidden="true"></i>
+                        </button>
+                    </li>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="menu-toggle" type="button" onclick="togglemenu()" aria-label="Open navigation" title="Open navigation" aria-expanded="false" aria-controls="sidemenu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
             </nav>
-            <div class="headerText">
-                <h2>Hi ,I'm <span class="hidden">Mufunwa Tshivhase</span> </h2>
+            <div class="headerText hidden">
+                <h2>Hi, I'm <span class="hidden">Mufunwa Tshivhase</span></h2>
                 <p>A tech enthusiast and computing honours student passionate about cloud technologies, digital
-                    branding, and <br>ing real-world problems through smart design and strategy.</p>
+                    branding, and solving real-world problems through smart design and strategy.</p>
             </div>
         </div>
-        <div class="hidden">
-            <div class="cert">
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/759F03C356872826?sharingId=6186806EAC14155C"
-                    target="_blank" rel="noopener noreferrer">
-                    <img src="images/pl-900.png" class="logo" alt="Microsoft Certified PL-900 Badge">
-                </a>
-
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/FFB1F0BB223DD003?sharingId=6186806EAC14155C"
-                    target="_blank" rel="noopener noreferrer">
-                    <img src="images/az-900.png" class="logo" alt="Microsoft Certified AZ-900 Badge">
-                </a>
-
-                <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/ADD-YOUR-AZ204-LINK-HERE"
-                    target="_blank" rel="noopener noreferrer">
+        <section class="certifications home-certifications hidden" aria-labelledby="certifications-title">
+            <div class="certifications-inner">
+                <h2 id="certifications-title">Certifications</h2>
+                <div class="cert">
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/759F03C356872826?sharingId=6186806EAC14155C"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="images/pl-900.png" class="logo" alt="Microsoft Certified PL-900 Badge">
+                    </a>
+                    <a href="https://learn.microsoft.com/api/credentials/share/en-us/mufunwatshivhase-5399/FFB1F0BB223DD003?sharingId=6186806EAC14155C"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="images/az-900.png" class="logo" alt="Microsoft Certified AZ-900 Badge">
+                    </a>
                     <img src="images/az-204.png" class="logo" alt="Microsoft Certified AZ-204 Badge">
-                </a>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <!------------------About Me--------------------------->
@@ -125,14 +141,14 @@
     </div>
     <!-----------------About Us 2------------------------------->
     <div id="E-E">
-        <div class="tab-links">
-            <h1 class="tab-link active-link" onclick="opentab('education')">Education</h1>
-            <h1 class="tab-link" onclick="opentab('experience')">Experience</h1>
+        <div class="tab-links" role="tablist" aria-label="Education and experience">
+            <button class="tab-link active-link" id="education-tab" type="button" role="tab" aria-selected="true" aria-controls="education" onclick="opentab('education', this)">Education</button>
+            <button class="tab-link" id="experience-tab" type="button" role="tab" aria-selected="false" aria-controls="experience" onclick="opentab('experience', this)">Experience</button>
         </div>
 
         <!-- Education tab -->
         <div class="hidden">
-            <div class="tab-content active-tab" id="education">
+            <div class="tab-content active-tab" id="education" role="tabpanel" aria-labelledby="education-tab">
                 <table class="education-table">
                     <thead>
                         <tr>
@@ -178,10 +194,10 @@
 
         <!-- Experience tab -->
 
-        <div class="tab-content" id="experience">
+        <div class="tab-content" id="experience" role="tabpanel" aria-labelledby="experience-tab">
             <ul>
                 <li>
-                    <h2>Greycode PTYLTD</h2>
+                    <h2>Greycode PTY LTD</h2>
                     <p class="role">Software Developer & Skills Development Assistant</p>
                     <p class="date">July 2024 – June 2025</p>
                     <img src="images/greycode.png" alt="Greycode Logo" style="max-width: 120px; margin-top: 8px;">
@@ -216,6 +232,7 @@
                 </li>
             </ul>
         </div>
+    </div>
 
 
         <!-----------------my projects----------------------------->
@@ -226,13 +243,12 @@
                 <div class="card-wrapper">
                     <ul class="card-list">
                         <li class="card-item">
-                            <a href="#" class="card-link">
+                            <a href="https://mufunwatshivhase.github.io/barber-Shop/" class="card-link">
                                 <img src="images/basic.webp" alt="Card Image" class="card-image">
-                                <p class="badge">My <Portal>Portfolio</Portal>
-                                </p>
+                                <p class="badge">Portfolio</p>
                                 <h2 class="card-title">Built with HTML5, CSS3, JavaScript (ES6), enhanced by CDN
                                     libraries and Google Fonts for responsive design and modern typography</h2>
-                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                                <span class="card-button material-symbols-rounded" aria-hidden="true">arrow_forward</span>
 
                             </a>
                         </li>
@@ -243,7 +259,7 @@
                                 <p class="badge">TM-nexus-group</p>
                                 <h2 class="card-title">Built with React, Vite, TailwindCSS, and deployed on GitHub Pages
                                 </h2>
-                                <button class="card-button material-symbols-rounded">arrow_forward</button>
+                                <span class="card-button material-symbols-rounded" aria-hidden="true">arrow_forward</span>
                             </a>
 
                         </li>
@@ -253,32 +269,32 @@
                                 <img src="images/AiImageGen.jpg" alt="Card Image" class="card-image">
                                 <p class="badge">Ai image Generator</p>
                                 <h2 class="card-title"> Built using HTML, CSS, and JavaScript, integrated with Hugging Face’s Inference API.</h2>
-                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                                <span class="card-button material-symbols-rounded" aria-hidden="true">arrow_forward</span>
 
                             </a>
                         </li>
                         <li class="card-item">
-                            <a href="#" class="card-link">
+                            <a href="https://mufunwatshivhase.github.io/barber-Shop/" class="card-link">
                                 <img src="images/basic.webp" alt="Card Image" class="card-image">
-                                <p class="badge">Comming Soon</p>
-                                <h2 class="card-title">collection of different basic programs</h2>
-                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                                <p class="badge">Barber Shop</p>
+                                <h2 class="card-title">A simple barber shop website built with HTML, CSS, and JavaScript.</h2>
+                                <span class="card-button material-symbols-rounded" aria-hidden="true">arrow_forward</span>
 
                             </a>
                         </li>
                         <li class="card-item">
-                            <a href="#" class="card-link">
-                                <img src="images/basic.webp" alt="Card Image" class="card-image">
-                                <p class="badge">Comming Soon</p>
-                                <h2 class="card-title">collection of different basic programs</h2>
-                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            <a href="https://mufunwatshivhase.github.io/barber-Shop/" class="card-link">
+                                <img src="images/basic.webp" alt="Project preview" class="card-image">
+                                <p class="badge">Coming soon</p>
+                                <h2 class="card-title">A collection of basic programming projects is in progress.</h2>
+                                <span class="card-button material-symbols-rounded" aria-hidden="true">arrow_forward</span>
 
                             </a>
                         </li>
                     </ul>
                 </div>
-                <button class="slide-btn prev">◀</button>
-                <button class="slide-btn next">▶</button>
+                <button class="slide-btn prev" type="button" aria-label="Previous projects" disabled>◀</button>
+                <button class="slide-btn next" type="button" aria-label="Next projects">▶</button>
             </div>
         </div>
 
@@ -286,23 +302,22 @@
         <div id="contact" class="hidden">
             <div class="content">
                 <h2>Contact Me</h2>
-                <p>You can download my cv below for your review. If you have any questions or need further information,
-                    feel free to contact me at your convenience. I’d be happy to clarify anything or provide additional
-                    details.</p>
+                <p>For enquiries, collaborations, or further details, get in touch using the contact information or
+                    send me a message below.</p>
             </div>
             <div class="containerr">
 
                 <div class=" contactInfo">
                     <div class="hidden">
                         <div class="box">
-                            <div class="icon"><i class="fa-solid fa-map-location-dot"></i></i></div>
+                            <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
                             <div class="text">
                                 <h3>Address</h3>
-                                <p>15 Yellowwood blvd<br> Riverside View, Johanesburg, 2198</p>
+                                <p>15 Yellowwood Blvd<br>Riverside View, Johannesburg, 2198</p>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="icon"><i class="fa-solid fa-phone"></i></i></div>
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
                             <div class="text">
                                 <h3>Phone Number</h3>
                                 <p>+27762256601</p>
@@ -321,7 +336,7 @@
 
 
                 <div class="contactForm">
-                    <form>
+                    <form id="contact-form">
                         <div class="hidden">
                             <h2>Send Message</h2>
 
@@ -343,17 +358,28 @@
                             <div class="inputBox">
                                 <input type="submit" value="Send">
                             </div>
+                            <p id="form-status" role="status" aria-live="polite"></p>
                         </div>
 
-                    </form>
                     </form>
 
                 </div>
             </div>
 
         </div>
-    </div>
-
+        <footer class="footerRow">
+            <div class="footer-content">
+                <a class="footer-name" href="#header">Mufunwa Tshivhase</a>
+                <p>Computing, cloud technology, and web development</p>
+                <div class="footer-links">
+                    <a href="#wrapper">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#header">Back to top</a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Mufunwa Tshivhase</p>
+            </div>
+        </footer>
+  <script src="56.js" defer></script>
 </body>
 
 </html>
