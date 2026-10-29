@@ -1,26 +1,13 @@
-function setMenuOpen(isOpen) {
-  const menu = document.getElementById('sidemenu');
-  const toggle = document.querySelector('.menu-toggle');
-  const icon = toggle.querySelector('.material-symbols-rounded');
-
-  menu.classList.toggle('open', isOpen);
-  toggle.setAttribute('aria-expanded', String(isOpen));
-  toggle.setAttribute('aria-label', `${isOpen ? 'Close' : 'Open'} navigation`);
-  toggle.title = `${isOpen ? 'Close' : 'Open'} navigation`;
-  icon.textContent = isOpen ? 'close' : 'menu';
-}
-
 function openmenu() {
-  setMenuOpen(true);
+  const menu = document.getElementById('sidemenu');
+  menu.classList.add('open');
+  document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'true');
 }
 
 function closemenu() {
-  setMenuOpen(false);
-}
-
-function togglemenu() {
   const menu = document.getElementById('sidemenu');
-  setMenuOpen(!menu.classList.contains('open'));
+  menu.classList.remove('open');
+  document.querySelector('.menu-toggle').setAttribute('aria-expanded', 'false');
 }
 
 document.querySelectorAll('#sidemenu a').forEach((link) => {
